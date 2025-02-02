@@ -1,0 +1,28 @@
+/* Programa de ejemplo para el analizador léxico
+   Este programa calcula el promedio de dos números */
+
+/* Este es un comentario 
+   de múltiples líneas
+   para probar el analizador */
+
+float calcularPromedio(float a, float b) {
+    return (a + b) / 2.0;
+}
+
+int main() {
+    // Declaración de variables
+    float numero1 = 15.75;
+    float numero2 = 20.25;
+    string mensaje = "Calculando promedio...";
+    
+    if (numero1 >= 0 && numero2 >= 0) {
+        float resultado = calcularPromedio(numero1, numero2);
+        if (resultado > 18.0) {
+            mensaje = "El promedio es alto";
+        } else {
+            mensaje = "El promedio es normal";
+        }
+    } else {
+        mensaje = "Error: números negativos";
+    }
+}
